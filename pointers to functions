@@ -1,0 +1,12 @@
+A function receiving a 'type' named arg
+ret_type func(type arg){...}
+
+Setting a pointer of type 'a pointer to a function receiving a single 'type' argument' to func
+ret_type (*ptr_func)(type) = &func;
+
+An array of size n of pointers of type 'a pointer to a function receiving a single 'type' argument'
+ret_type (*ptr_func[n])(type) = {func,...};
+
+A function named func that receives 1 argument of type type1 and returns a pointer to a function
+that receives 2 arguments of type type2 and type3 and returns output of type output's_return_type.
+output's_return_type (*Func(type1 arg1))(type2, type3){...}
